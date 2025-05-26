@@ -1,0 +1,134 @@
+body.admin {
+  background: #718A9C;
+  font-family: "Arial", sans-serif;
+  color: #f1f1f1;
+  margin: 0;
+}
+
+.admin-dashboard {
+  position: relative;        
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;   
+  position: relative;
+}
+
+.admin-header h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.logout-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #EB5F1C;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.25s;
+}
+.logout-button:hover { opacity: 0.85; }
+
+.admin-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.admin-form-section { flex: 1 1 320px; display: flex; flex-direction: column; gap: 2rem; }
+.admin-list-section { flex: 2 1 540px; }
+
+.create-form-card,
+.edit-form-card {
+  background: linear-gradient(180deg, #49535a 30%, #700a87 100%);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.create-form-card { border-left: 4px solid #27ae60; }
+.edit-form-card   { border-left: 4px solid #EB5F1C; animation: slideIn 0.3s; }
+
+.create-form-card:hover,
+.edit-form-card:hover { transform: translateY(-4px); }
+
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);   opacity: 1; }
+}
+
+.admin-tournament-form label {
+  display: block;
+  font-size: 18px;           
+  font-weight: 600;
+  margin: 12px;
+}
+
+.admin-tournament-form input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 4px;
+  font-size: 16px;           
+  border: 1px solid #555;
+  border-radius: 6px;
+  background: #2b2b31;
+  color: #f1f1f1;
+}
+
+.admin-tournament-form button {
+  margin-top: 18px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.25s;
+}
+.admin-tournament-form button[type="submit"] { background: #EB5F1C; color: #fff; }
+.admin-tournament-form button[type="button"] { background: #95a5a6; color: #fff; }
+
+.admin-tournament-form button:hover { opacity: 0.85; }
+
+.tournament-item.admin {
+  background: linear-gradient(180deg, #49535a 30%, #700a87 100%);
+  border: 1px solid #623131;
+  padding: 1rem;
+  border-radius: 12px;
+  color: #f1f1f1;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.3);
+}
+
+.admin-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.edit-button,
+.delete-button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.25s;
+}
+
+.edit-button  { background: #ffc107; color: #000; }
+.delete-button{ background: #dc3545; color: #fff; }
+
+.edit-button:hover,
+.delete-button:hover { opacity: 0.85; }

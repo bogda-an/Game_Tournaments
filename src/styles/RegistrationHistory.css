@@ -1,0 +1,84 @@
+.registration-history {
+  position: relative;
+  background: url('../images/buttom5.png');
+  background-size:cover; 
+  width: 100%;
+  padding: 4rem 0;                 
+  color: #fff;
+}
+
+
+.registration-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 2rem;                 
+}
+
+.registration-inner h2 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 2rem;
+}
+
+.registration-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 2fr));
+  gap: 32px;
+  margin-left: auto;        
+  max-width: 500px;         
+}
+
+.registration-item {
+  height: 180px;
+  width: 200px;
+  padding: 16px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #49535a 30%, #700a87 100%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+
+.registration-item:hover {
+  transform: translateY(-4px);
+}
+
+.registration-info h3 {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.registration-info p,
+.label {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.cancel-button {
+  background: #EB5F1C;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.cancel-button:hover {
+  background: #ff7d4d;
+}
+
+.no-registrations {
+  text-align: center;
+  color: #ccc;
+  font-size: 18px;
+  padding: 2rem 0;
+}
+
+.message-banner {
+  text-align: center;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,36 @@
+.top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #718A9C;          
+    color: #ffffff;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+  }
+  
+  .top-bar ul {
+    display: flex;
+    flex: 1;                      
+    justify-content: center;      
+    gap: 64px;                    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .top-bar li {
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.2s;
+  }
+  
+  .top-bar li:hover {
+    color: #ff8c00;               
+  }
+  
+  .top-bar li:last-child {
+    margin-left: auto;
+    padding-left: 64px;           
+  }

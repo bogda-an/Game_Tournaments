@@ -1,0 +1,35 @@
+.map-container {
+  height: 800px;
+  width: 1140px;
+  margin: 0 auto; 
+  margin-top: 100px;
+}
+
+.map-popup-content {
+  min-width: 200px;
+}
+
+.map-popup-heading {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+}
+
+.map-register-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  color: #ffffff;
+  background-color: #EB5F1C;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.map-register-button:hover {
+  opacity: 0.9;
+}
+
+.map-register-button:disabled {
+  background-color: #EB5F1C;
+  cursor: not-allowed;
+}

@@ -1,0 +1,80 @@
+.search-bar-container {
+    margin-top: 100px;
+}
+.search-bar-container h2, .search-bar-container p {
+    color: #fff;
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    text-align: center;  
+}
+
+.search-bar-container h2 {
+    font-size: 64px;          
+    margin-bottom: 10px;      
+}
+
+.search-bar-container p {
+    font-size: 18px;          
+    margin-bottom: 20px;      
+    color: #ffffffac;
+}
+
+.SearchBar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .SearchBar form {
+    display: flex;
+    align-items: center;
+    background-color: #ffffffb0; 
+    border-radius: 32px;          
+    padding: 0px;            
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .SearchBar input[type="text"],
+  .SearchBar input[type="date"] {
+    height: 60px;           
+    padding: 0 24px;
+    font-size: 18px;   
+    border: 1px solid #ccc;   
+    border-radius: 32px;        
+    margin-right: 10px;        
+  }
+  
+  .SearchBar input[type="text"]::placeholder {
+    color: #888;                
+  }
+  
+  #title{
+    border-radius: 32px 8px 8px 32px;
+  }
+
+  #location {
+    border-radius: 8px;
+  }
+
+  .SearchBar input[type="date"] {
+    width: 150px;               
+    border-radius: 8px;
+  }
+  
+  .SearchBar button {
+    height: 60px;              
+    padding: 0 32px;            
+    background-color: #EB5F1C; 
+    color: #fff;               
+    font-size: 20px;            
+    border: none;
+    border-radius: 0px 32px 32px 0px;         
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .SearchBar button:hover {
+    background-color: #6C85AA;  
+  }
+  
