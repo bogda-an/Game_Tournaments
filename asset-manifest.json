@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bogda-an/Game_Tournaments.git/static/css/main.b1ebf2e5.css",
+    "main.js": "/bogda-an/Game_Tournaments.git/static/js/main.206c0ef3.js",
+    "static/media/hero1.png": "/bogda-an/Game_Tournaments.git/static/media/hero1.0612d08f7ee8a39c255c.png",
+    "static/media/buttom5.png": "/bogda-an/Game_Tournaments.git/static/media/buttom5.f07a2f96ef8b2f01aa5b.png",
+    "index.html": "/bogda-an/Game_Tournaments.git/index.html",
+    "main.b1ebf2e5.css.map": "/bogda-an/Game_Tournaments.git/static/css/main.b1ebf2e5.css.map",
+    "main.206c0ef3.js.map": "/bogda-an/Game_Tournaments.git/static/js/main.206c0ef3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1ebf2e5.css",
+    "static/js/main.206c0ef3.js"
+  ]
+}
