@@ -2,69 +2,69 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+🎮 Gaming Tournament Management System
+This is a React-based web application that allows users to browse and register for gaming tournaments, and provides admin functionality to create and manage tournaments. The app uses Firebase Authentication and Cloud Firestore as the backend.
 
-In the project directory, you can run:
+🚀 Features
+User registration and login using Firebase Authentication
 
-### `npm start`
+Admin dashboard for creating/editing tournaments
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Tournament listing with real-time updates
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Tournament registration for users
 
-### `npm test`
+Registration history and tournament availability tracking
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Interactive map displaying tournament locations
 
-### `npm run build`
+Client-side search and filtering by title, date, location
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🧑‍💻 User Credentials
+Use the following credentials to test the app as a normal user:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Email: user@gmail.com
+Password: 1234567
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🛠️ Admin Credentials
+Use the following credentials to access the admin dashboard and manage tournaments:
 
-### `npm run eject`
+Email: admin@gmail.com
+Password: 1234567
+⚠️ You must be logged in with the admin credentials to create or edit tournaments.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+📦 Installation Instructions
+Clone the repository or extract the ZIP file
+Navigate into the project folder:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+cd gaming-tournament
+Install dependencies
+Make sure you have Node.js installed. Then run:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm install
+Run the app locally
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm start
+Access the app
+Open your browser and go to:
 
-## Learn More
+http://localhost:3000
+🔐 Firebase Configuration
+Firebase is already set up. The configuration is stored in src/firebase.js.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🗺️ Notes
+Tournament creation requires specifying a location (city name). This is converted to coordinates for map display.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The map uses OpenStreetMap via Leaflet.js.
 
-### Code Splitting
+Firestore security rules restrict write access to the admin user only.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📁 Folder Structure Overview
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+src/
+├── components/           # React UI components
+├── contexts/             # Auth and tournament context providers
+├── pages/                # Page components (Dashboard, Admin, Login)
+├── firebase.js           # Firebase config and exports
+├── App.js                # Main app and routes
+├── index.js              # React entry point
